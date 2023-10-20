@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-mpms
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0099-tenant/ci1t-830-0099-app/devfile-sample-mpms@sha256:d8e105f9760cb855ad66c82987ddabfb6a0374e78e5b060dc522dc3a8da80e2c
+        name: my-nodejs
+        resources: {}
+status: {}
